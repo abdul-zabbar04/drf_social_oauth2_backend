@@ -30,7 +30,7 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost:8000', '.vercel.app']
+ALLOWED_HOSTS = ['localhost', '.vercel.app']
 
 
 AUTH_USER_MODEL = 'authentications.CustomUser'
@@ -147,8 +147,8 @@ MIDDLEWARE = [
 
 CSRF_COOKIE_SAMESITE = 'Lax'
 SESSION_COOKIE_SAMESITE = 'Lax'
-SESSION_COOKIE_SECURE = False  # True only in production over HTTPS
-CSRF_COOKIE_SECURE = False     # Same here
+SESSION_COOKIE_SECURE = True  # True only in production over HTTPS
+CSRF_COOKIE_SECURE = True     # Same here
 
 
 

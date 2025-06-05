@@ -65,10 +65,12 @@ CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # Your frontend URL
     "http://localhost:8000",
+    "https://drf-social-authentication.vercel.app"
 ]
 CSRF_COOKIE_HTTPONLY = False
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:3000",
+    "https://drf-social-authentication.vercel.app"
 ]
 
 
